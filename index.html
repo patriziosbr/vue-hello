@@ -14,11 +14,11 @@
         <h1>{{message}}</h1>
         <div class="container">
             <div class="box">
-                <img :src="imageMount"/>
+                <img v-if="imageMount" :src="imageMount"/>
                 <button class="btn mount" @click="getMount()">Mountain</button>
             </div>
             <div class="box">
-                <img :src="imageSea"/>
+                <img v-if="imageSea" :src="imageSea"/>
                 <button class="btn sea" @click="getSea()">Sea Beach</button>
             </div>
         </div>
